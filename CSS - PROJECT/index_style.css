@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2eaea;
+    color: #333;
+    background: radial-gradient(circle,green,#f2eaea,#ff5722);
+    
+}
+
+
+.site-header {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.site-header :hover{
+   background: radial-gradient(circle,green,#f2eaea,#ff5722);
+}
+
+
+.navbar {
+    background-color: green;
+    /* background: #333; */
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+   
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+.navbar ul li a:hover {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+/* #Map:hover{
+    background: radial-gradient(circle,green,#f2eaea,#ff5722);
+
+} */
+
+/* Footer styles */
+.site-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.site-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+

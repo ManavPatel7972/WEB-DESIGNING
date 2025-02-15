@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    background-color: #02191dc9;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+  }
+  
+  .header__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1px;
+  }
+  
+  .header__nav-item {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 5px;
+    
+  
+  }
+  .header__nav-item:hover {
+   padding: 10px;
+   border: 1px solid rgb(254, 254, 254);
+   border-radius: 5px;
+  }
+  
+  
+  .header__nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight:500;
+  
+  }
+  .header__nav-link:hover{
+    color:rgb(156, 158, 174);
+  }
+  .main-content {
+    max-width: 900px;
+    margin:30px auto;
+    padding: 20px;
+    background: rgb(242, 241, 241);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  .section__title, .section__subtitle {
+    color: #02191dc9;
+  }
+  
+  .section__description, .section__text {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .section__list {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .section__list-item {
+    margin-bottom: 10px;
+  }
+  
+  .section__image {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 10px auto;
+  }
+  
+  .section__caption {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#02191dc9 ;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  .footer__nav-link, .footer__contact-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .footer {
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+  
