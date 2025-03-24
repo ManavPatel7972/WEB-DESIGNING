@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-9C</title>
+    <style>
+        .box{
+            margin: 20px auto;
+            background-color: black;
+            height: 70vh;
+            width: 100vw;
+            position: relative;
+        }
+        .box1{
+            height:70px;
+            width: 70px;
+            border: 2px solid white;
+            border-radius:50%;
+            position: absolute;
+            animation: box1 2s linear 0s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            height:35px;
+            width: 35px;
+            border: 2px solid white;
+            border-radius:50%;
+            position: absolute;
+            animation: box2 2 linear 0s infinite alternate ;
+        }
+       
+        
+        @keyframes box1 {
+            0%{
+              top: 0vh;
+              left: 0;
+              border-color: white;
+            }
+            25%{
+               top: 58vh;
+               left:25vw;
+               border-color: blue;
+            }
+            50%{
+            top: 0;
+            left: 50vw;
+            border-color: red;
+            }
+            75%{
+                top: 58vh;
+                left: 75vw;
+                border-color: green;
+            }
+            100%{
+                top: 0;
+                left: 94vw;
+                border-color: yellow;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="box1">
+            <div class="box2"></div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

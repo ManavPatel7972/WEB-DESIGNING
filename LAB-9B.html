@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB-9B</title>
+    <style>
+        .box{
+            height: 500px;
+            width: 100%;
+            background-color: rgb(121, 104, 104);
+           
+        }
+        .ball2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(26, 9, 120);
+            border: 2px solid black;
+            border-radius:50px;
+            animation: ball2 3s ease 1s infinite alternate;
+            position: relative;
+            
+        }
+        .ball1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius:50px;
+            animation: ball1 5s ease-in-out 1s infinite alternate;
+            position: relative;
+        }
+        @keyframes ball1 {
+
+            0%{
+            top: 0px;
+            left: 0px;
+            }
+            18%{
+                top: 394px;
+                left: 400px;
+            }
+            36%{
+                top: 0px;
+                left: 800px;
+            }
+            54%{
+                top:394px;
+                left: 1500px;
+            }
+            72%{
+                top: 0px;
+                left: 800px;
+            }
+            90%{
+                top: 394px;
+                left: 400px;
+            }
+            100%{
+                top: 0px;
+                left:0px;
+            }
+           
+        }
+        @keyframes ball2 {
+            0%{
+            top: 0px;
+            left: 0px;
+            }
+            18%{
+                top: 294px;
+                left: 200px;
+            }
+            36%{
+                top: 0px;
+                left: 400px;
+            }
+            54%{
+                top:294px;
+                left: 600px;
+            }
+            72%{
+                top: 0px;
+                left: 800px;
+            }
+            90%{
+                top: 294px;
+                left: 1000px;
+            }
+            100%{
+                top: 0px;
+                left: 1100px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+    </div>
+    
+</body>
+</html>
