@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2eaea;
+    color: #333;
+    background: radial-gradient(circle, green, #f2eaea, #ff5722);
+    transition: background 1s ease-in-out;
+}
+
+/* Header Styles */
+.site-header {
+    background: #ff5722;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    transition: all 0.5s;
+}
+
+.site-header:hover {
+    background: radial-gradient(circle, green, #f2eaea, #ff5722);
+    transform: scale(1.02);
+    transform: rotate(2.5deg);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: green;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition:  0.5s ease-in-out;
+    padding: 10px 0;
+}
+.navbar:hover{     
+    
+    color: #333;
+
+    /* .navbar ul li:hover{           
+        color: #333;                 Nested hover Effect ??  
+    } */
+
+    background:linear-gradient(#ff5722,#f2eaea,green);
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 5px 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    transition:  0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: #333;
+}
+
+.navbar ul li{
+    transition: 0.3s ease-in;
+}
+
+.navbar ul li:hover{
+    transform: scale(1.1);
+}
+
+/* Content Section */
+.content {
+    padding: 20px;
+    text-align: center;
+    animation: ani 3s ease-in-out;
+}
+
+.content img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 100%;
+    height: auto;
+}
+
+.content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+}
+
+/* Footer Styles */
+.site-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: footAni 3s ease-in-out;
+}
+
+.site-footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+    color: #ff5722;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    .navbar ul li a {
+        font-size: 16px;
+    }
+    .content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-header h1 {
+        font-size: 22px;
+    }
+    .site-header h3 {
+        font-size: 16px;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li a {
+        font-size: 14px;
+    }
+    .content {
+        padding: 5px;
+    }
+}
+
+/* Keyframe Animations */
+@keyframes ani {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes footAni {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
