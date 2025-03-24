@@ -1,0 +1,16 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+footer {
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+ }
+  

@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box !important;
+}
+body{
+    background-color: #f2eaea !important;
+}
+
+.site-header {
+
+    background: #ff5722;
+    transition: all 0.5s;
+}
+.site-footer {
+    background: #333 !important;
+    animation: footAni 3s ease-in-out;
+}
